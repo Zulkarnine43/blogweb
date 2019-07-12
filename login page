@@ -1,0 +1,54 @@
+<?php
+ 
+ if(isset($_POST['btn'])){
+ 	     print('br/');
+         print_r($_POST);
+ }
+
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+
+</head>
+<body>
+	<form action="" method="POST">
+	<div>
+  <div>Firstname:</div>
+  <div><input type="text" name="firstname" value=""></div>
+</div>
+	<div>
+  <div>Lastname:</div>
+  <div><input type="text" name="lastname" value=""></div>
+</div>
+	<div>
+  <div>Mobile:</div>
+  <div><input type="number" name="mobile"></div>
+</div>
+	<div>
+  <div>Email:</div>
+  <div><input type="text" name="email"></div>
+</div>
+<div>
+  <div>Gender:</div>
+  <div><input type="radio" name="gender" value="1">Male</div>
+  <div><input type="radio" name="gender" value="0">Female</div>
+</div>
+	<div>
+  <div>Division:</div>
+  <div><select name="division">
+  	<option>SElect district name</option>
+  	<option>Dhaka</option><option>Rajshahi</option><option>Chittagong</option><option>Comilla</option>
+  </select></div>
+</div>
+	<div>
+  <div></div>
+  <div><input type="submit" name="btn" value="submit"></div>
+</div>
+
+</form>
+</body>
+</html>
